@@ -8,9 +8,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
 }
 
 .container{
+  height: 100%;
+  overflow-y: auto;
   width: 90%;
   margin: 20px auto;
 }
@@ -107,3 +112,23 @@ body {
   opacity: 0.9;
   cursor: pointer;
 }
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 25px;
+  }
+  .report {
+    font-size: 16px;
+  }
+  .btn {
+    font-size: 16px;
+  }
+  .profile-img {
+    width: 90px;
+    height: 90px;
+  }
+  .section{
+    padding: 15px;
+  }
+}
+
